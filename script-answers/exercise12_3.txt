@@ -1,49 +1,384 @@
+Script started on Sat Mar 15 20:13:28 2025
+Restored session: Sat Mar 15 20:13:22 EET 2025
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                    
+ 
+]7;file://MLNW9GKMWW7/Users/ville/Documents/GitHub/cointainers-applications-main
+[0m[27m[24m[Jville@MLNW9GKMWW7 cointainers-applications-main % [K[?2004h[7mdocker container ls -a[27m[22D[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27ml[27ms[27m [27m-[27ma[?2004l
 
-root@24e7d9846907:/# apt-get update
-Get:1 http://archive.ubuntu.com/ubuntu noble InRelease [256 kB]
-Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
-Get:3 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [807 kB]
-Get:4 http://archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
-Get:5 http://archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
-Get:6 http://archive.ubuntu.com/ubuntu noble/universe amd64 Packages [19.3 MB]
-Get:7 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [24.2 kB]
-Get:8 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1053 kB]
-Get:9 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [842 kB]
-Get:10 http://archive.ubuntu.com/ubuntu noble/multiverse amd64 Packages [331 kB]
-Get:11 http://archive.ubuntu.com/ubuntu noble/main amd64 Packages [1808 kB]
-Get:12 http://archive.ubuntu.com/ubuntu noble/restricted amd64 Packages [117 kB]
-Get:13 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1131 kB]
-Get:14 http://archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [28.8 kB]
-Get:15 http://archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1336 kB]
-Get:16 http://archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [881 kB]
-Get:17 http://archive.ubuntu.com/ubuntu noble-backports/universe amd64 Packages [16.0 kB]
-Fetched 28.3 MB in 5s (5903 kB/s)
+CONTAINER ID   IMAGE      COMMAND                  CREATED         STATUS                      PORTS     NAMES
+cf3517c44822   ubuntu     "bash"                   2 minutes ago   Exited (0) 2 minutes ago              priceless_germain
+187563055c37   postgres   "docker-entrypoint.s…"   9 days ago      Exited (0) 20 minutes ago             adoring_curie
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                    
+ 
+]7;file://MLNW9GKMWW7/Users/ville/Documents/GitHub/cointainers-applications-main
+[0m[27m[24m[Jville@MLNW9GKMWW7 cointainers-applications-main % [K[?2004hddocker container          start -i priceless_germain[?2004l
+
+[?2004h]0;root@cf3517c44822: /root@cf3517c44822:/# apt-get update
+[?2004l
+
+0% [Working]
+            
+Get:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease [256 kB]
+
+0% [1 InRelease 14.2 kB/256 kB 6%]
+                                  
+0% [Working]
+            
+Get:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease [126 kB]
+
+0% [2 InRelease 15.6 kB/126 kB 12%]
+0% [2 InRelease 64.9 kB/126 kB 51%]
+                                   
+0% [Working]
+0% [Waiting for headers]
+                        
+Get:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease [126 kB]
+
+0% [3 InRelease 10.3 kB/126 kB 8%]
+                                  
+0% [Working]
+0% [Waiting for headers]
+                        
+Get:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease [126 kB]
+
+0% [4 InRelease 14.9 kB/126 kB 12%]
+                                   
+0% [Working]
+15% [Waiting for headers]
+                         
+Get:5 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 Packages [1776 kB]
+
+15% [5 Packages 15.7 kB/1776 kB 1%]
+                                   
+20% [Waiting for headers]
+                         
+Get:6 http://ports.ubuntu.com/ubuntu-ports noble/multiverse arm64 Packages [274 kB]
+
+20% [6 Packages 241 kB/274 kB 88%]
+20% [5 Packages store 0 B] [6 Packages 257 kB/274 kB 94%]
+                                                         
+20% [5 Packages store 0 B] [Waiting for headers]
+                                                
+Get:7 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 Packages [19.0 MB]
+
+20% [5 Packages store 0 B] [7 Packages 18.3 kB/19.0 MB 0%]
+                                                          
+24% [7 Packages 1045 kB/19.0 MB 5%]
+24% [6 Packages store 0 B] [7 Packages 1045 kB/19.0 MB 5%]
+                                                          
+24% [7 Packages 1045 kB/19.0 MB 5%]
+48% [7 Packages 9414 kB/19.0 MB 49%]
+74% [7 Packages 18.8 MB/19.0 MB 99%]
+                                    
+75% [Waiting for headers]
+                         
+Get:8 http://ports.ubuntu.com/ubuntu-ports noble/restricted arm64 Packages [113 kB]
+
+75% [8 Packages 45.6 kB/113 kB 40%]
+75% [7 Packages store 0 B] [8 Packages 45.6 kB/113 kB 40%]
+                                                          
+Get:9 http://ports.ubuntu.com/ubuntu-ports noble-updates/universe arm64 Packages [1311 kB]
+
+75% [7 Packages store 0 B] [9 Packages 25.6 kB/1311 kB 2%]
+                                                          
+79% [7 Packages store 0 B] [Waiting for headers]
+                                                
+Get:10 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 Packages [1164 kB]
+
+79% [7 Packages store 0 B] [10 Packages 61.0 kB/1164 kB 5%]
+                                                           
+82% [7 Packages store 0 B] [Waiting for headers]
+                                                
+Get:11 http://ports.ubuntu.com/ubuntu-ports noble-updates/restricted arm64 Packages [1090 kB]
+
+82% [7 Packages store 0 B] [11 Packages 3188 B/1090 kB 0%]
+                                                          
+85% [7 Packages store 0 B]
+                          
+Get:12 http://ports.ubuntu.com/ubuntu-ports noble-updates/multiverse arm64 Packages [32.7 kB]
+
+85% [7 Packages store 0 B] [12 Packages 1211 B/32.7 kB 4%]
+                                                          
+86% [7 Packages store 0 B]
+                          
+Get:13 http://ports.ubuntu.com/ubuntu-ports noble-backports/universe arm64 Packages [16.1 kB]
+
+86% [7 Packages store 0 B] [13 Packages 2659 B/16.1 kB 17%]
+                                                           
+86% [7 Packages store 0 B] [Waiting for headers]
+                                                
+Get:14 http://ports.ubuntu.com/ubuntu-ports noble-security/restricted arm64 Packages [1041 kB]
+
+86% [7 Packages store 0 B] [14 Packages 836 B/1041 kB 0%]
+                                                         
+87% [14 Packages 425 kB/1041 kB 41%]
+87% [8 Packages store 0 B] [14 Packages 425 kB/1041 kB 41%]
+                                                           
+88% [14 Packages 474 kB/1041 kB 46%]
+88% [9 Packages store 0 B] [14 Packages 474 kB/1041 kB 46%]
+                                                           
+90% [14 Packages 1033 kB/1041 kB 99%]
+90% [10 Packages store 0 B] [14 Packages 1033 kB/1041 kB 99%]
+                                                             
+90% [10 Packages store 0 B] [Waiting for headers]
+                                                 
+Get:15 http://ports.ubuntu.com/ubuntu-ports noble-security/universe arm64 Packages [1028 kB]
+
+90% [10 Packages store 0 B] [15 Packages 7742 B/1028 kB 1%]
+                                                           
+93% [15 Packages 731 kB/1028 kB 71%]
+93% [11 Packages store 0 B] [15 Packages 733 kB/1028 kB 71%]
+                                                            
+94% [11 Packages store 0 B] [Waiting for headers]
+                                                 
+Get:16 http://ports.ubuntu.com/ubuntu-ports noble-security/multiverse arm64 Packages [30.8 kB]
+
+94% [11 Packages store 0 B] [16 Packages 19.3 kB/30.8 kB 63%]
+                                                             
+94% [11 Packages store 0 B] [Waiting for headers]
+                                                 
+Get:17 http://ports.ubuntu.com/ubuntu-ports noble-security/main arm64 Packages [843 kB]
+
+94% [11 Packages store 0 B] [17 Packages 9947 B/843 kB 1%]
+                                                          
+95% [17 Packages 395 kB/843 kB 47%]
+95% [12 Packages store 0 B] [17 Packages 395 kB/843 kB 47%]
+                                                           
+96% [17 Packages 395 kB/843 kB 47%]
+96% [13 Packages store 0 B] [17 Packages 395 kB/843 kB 47%]
+                                                           
+97% [17 Packages 395 kB/843 kB 47%]
+97% [14 Packages store 0 B] [17 Packages 395 kB/843 kB 47%]
+                                                           
+98% [17 Packages 792 kB/843 kB 94%]
+98% [15 Packages store 0 B] [17 Packages 792 kB/843 kB 94%]
+                                                           
+98% [15 Packages store 0 B]
+                           
+99% [Working]
+99% [16 Packages store 0 B]
+                           
+99% [Working]
+99% [17 Packages store 0 B]
+                           
+100% [Working]
+              
+Fetched 28.4 MB in 3s (10.8 MB/s)
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 6%
+
+Reading package lists... 6%
+
+Reading package lists... 70%
+
+Reading package lists... 70%
+
+Reading package lists... 71%
+
+Reading package lists... 71%
+
+Reading package lists... 72%
+
+Reading package lists... 72%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 82%
+
+Reading package lists... 82%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 90%
+
+Reading package lists... 90%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
 Reading package lists... Done
-root@24e7d9846907:/# apt-get -y install nano
+
+[?2004h]0;root@cf3517c44822: /root@cf3517c44822:/# [7mapt-get -y install nano[27mapt-get -y install nano
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 0%
+
+Reading package lists... 6%
+
+Reading package lists... 6%
+
+Reading package lists... 70%
+
+Reading package lists... 70%
+
+Reading package lists... 71%
+
+Reading package lists... 71%
+
+Reading package lists... 72%
+
+Reading package lists... 72%
+
+Reading package lists... 76%
+
+Reading package lists... 76%
+
+Reading package lists... 82%
+
+Reading package lists... 82%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 87%
+
+Reading package lists... 90%
+
+Reading package lists... 90%
+
+Reading package lists... 95%
+
+Reading package lists... 95%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
+Reading package lists... 99%
+
 Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
 Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 98%
+
 Reading state information... Done
+
 Suggested packages:
   hunspell
 The following NEW packages will be installed:
   nano
 0 upgraded, 1 newly installed, 0 to remove and 18 not upgraded.
-Need to get 282 kB of archives.
-After this operation, 856 kB of additional disk space will be used.
-Get:1 http://archive.ubuntu.com/ubuntu noble-updates/main amd64 nano amd64 7.2-2ubuntu0.1 [282 kB]
-Fetched 282 kB in 1s (319 kB/s)
+Need to get 281 kB of archives.
+After this operation, 909 kB of additional disk space will be used.
+
+0% [Working]
+            
+Get:1 http://ports.ubuntu.com/ubuntu-ports noble-updates/main arm64 nano arm64 7.2-2ubuntu0.1 [281 kB]
+
+0% [1 nano 1165 B/281 kB 0%]
+                            
+100% [Working]
+              
+Fetched 281 kB in 0s (1022 kB/s)
 debconf: delaying package configuration, since apt-utils is not installed
 Selecting previously unselected package nano.
-(Reading database ... 4383 files and directories currently installed.)
-Preparing to unpack .../nano_7.2-2ubuntu0.1_amd64.deb ...
+(Reading database ... 
+(Reading database ... 5%
+(Reading database ... 10%
+(Reading database ... 15%
+(Reading database ... 20%
+(Reading database ... 25%
+(Reading database ... 30%
+(Reading database ... 35%
+(Reading database ... 40%
+(Reading database ... 45%
+(Reading database ... 50%
+(Reading database ... 55%
+(Reading database ... 60%
+(Reading database ... 65%
+(Reading database ... 70%
+(Reading database ... 75%
+(Reading database ... 80%
+(Reading database ... 85%
+(Reading database ... 90%
+(Reading database ... 95%
+(Reading database ... 100%
+(Reading database ... 4378 files and directories currently installed.)
+Preparing to unpack .../nano_7.2-2ubuntu0.1_arm64.deb ...
 Unpacking nano (7.2-2ubuntu0.1) ...
 Setting up nano (7.2-2ubuntu0.1) ...
 update-alternatives: using /bin/nano to provide /usr/bin/editor (editor) in auto mode
-update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/nano.1.gz (
-of link group editor) doesn't exist
+update-alternatives: warning: skip creation of /usr/share/man/man1/editor.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group editor) doesn't exist
 update-alternatives: using /bin/nano to provide /usr/bin/pico (pico) in auto mode
-update-alternatives: warning: skip creation of /usr/share/man/man1/pico.1.gz because associated file /usr/share/man/man1/nano.1.gz (of
- link group pico) doesn't exist
-root@24e7d9846907:/# nano /usr/src/app/index.js
-root@24e7d9846907:/# exit
+update-alternatives: warning: skip creation of /usr/share/man/man1/pico.1.gz because associated file /usr/share/man/man1/nano.1.gz (of link group pico) doesn't exist
+[?2004h]0;root@cf3517c44822: /root@cf3517c44822:/# [7mnano /usr/src/app/index.js[27mnano /usr/src/app/index.js
+[?2004l
+[?2004h[?1049h[22;0;0t[1;70r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[68;116H(B[0;7m[ Reading... ](B[m[68;115H(B[0;7m[ Read 0 lines ](B[m[H(B[0;7m  GNU nano 7.2 [99b/usr/src/app/index.js [108b [1;244H(B[m
+[69d(B[0;7m^G(B[m Help[69;18H(B[0;7m^O(B[m Write Out     (B[0;7m^W(B[m Where Is[52G(B[0;7m^K(B[m Cut[69;69H(B[0;7m^T(B[m Execute[86G(B[0;7m^C(B[m Location[103G(B[0;7mM-U(B[m Undo[69;120H(B[0;7mM-A(B[m Set Mark     (B[0;7mM-](B[m To Bracket   (B[0;7mM-Q(B[m Previous     (B[0;7m^B(B[m Back[69;188H(B[0;7m^Left(B[m Prev Word  (B[0;7m^A(B[m Home[69;222H(B[0;7m^P(B[m Prev Line
+[70d(B[0;7m^X(B[m Exit[70;18H(B[0;7m^R(B[m Read File     (B[0;7m^\(B[m Replace[52G(B[0;7m^U(B[m Paste[70;69H(B[0;7m^J(B[m Justify[86G(B[0;7m^/(B[m Go To Line    (B[0;7mM-E(B[m Redo[70;120H(B[0;7mM-6(B[m Copy[70;137H(B[0;7m^Q(B[m Where Was     (B[0;7mM-W(B[m Next[70;171H(B[0;7m^F(B[m Forward[188G(B[0;7m^Right(B[m Next Word (B[0;7m^E(B[m End[70;222H(B[0;7m^N(B[m Next Line
+[2d[?12l[?25h[?25l[1;137H(B[0;7m*
+[68d(B[m[K[1;244H
+[2dconsole.log((B[0;1m[35m'Hello World'[39m(B[m)[?12l[?25h[?25l
+[68d(B[0;7mSave modified buffer? [222b [69;1H Y(B[m Yes[K
+[70d(B[0;7m N(B[m No  [70;17H(B[0;7m^C(B[m Cancel[K[68;23H[?12l[?25h[?25l
+[69d(B[0;7m^G(B[m Help[69;62H(B[0;7mM-D(B[m DOS Format[69;123H(B[0;7mM-A(B[m Append[69;184H(B[0;7mM-B(B[m Backup File
+[70d(B[0;7m^C(B[m Cancel[17G [8b[70;62H(B[0;7mM-M(B[m Mac Format[70;123H(B[0;7mM-P(B[m Prepend[70;184H(B[0;7m^T(B[m Browse
+[68d(B[0;7mFile Name to Write: /usr/src/app/index.js(B[m[?12l[?25h[?25l[68;115H[1K (B[0;7m[ Writing... ](B[m[K[1;137H(B[0;7m [244G(B[m[68;115H(B[0;7m[ Wrote 1 line ](B[m
+[J[70d[?12l[?25h[70;1H[?1049l[23;0;0t
+[?1l>[?2004l[?2004h]0;root@cf3517c44822: /root@cf3517c44822:/# [Kexit
+[?2004l
 exit
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                                                                    
+ 
+]7;file://MLNW9GKMWW7/Users/ville/Documents/GitHub/cointainers-applications-main
+[0m[27m[24m[Jville@MLNW9GKMWW7 cointainers-applications-main % [K[?2004heexit[?2004l
+
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Sat Mar 15 20:15:16 2025

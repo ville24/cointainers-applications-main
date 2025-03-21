@@ -1,0 +1,340 @@
+Script started on Thu Mar 20 23:02:04 2025
+Restored session: Tue Mar 18 17:11:30 EET 2025
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MLNW9GKMWW7/Users/ville/Documents/GitHub/cointainers-applications-main
+[0m[27m[24m[Jville@MLNW9GKMWW7 cointainers-applications-main % [K[?2004hexitdocker exec -it todo-backend-mongo-1 mongosh -u root -p password[K[A[23Ccontainer ls[K[1B
+[K[A[79C[?2004l[1B
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                     NAMES
+5cbc8a8fffeb   redis     "docker-entrypoint.s…"   35 minutes ago   Up 4 minutes    0.0.0.0:6378->6379/tcp    todo-backend-redis-1
+ea73aabe974f   mongo     "docker-entrypoint.s…"   2 days ago       Up 35 minutes   0.0.0.0:3456->27017/tcp   todo-backend-mongo-1
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MLNW9GKMWW7/Users/ville/Documents/GitHub/cointainers-applications-main
+[0m[27m[24m[Jville@MLNW9GKMWW7 cointainers-applications-main % [K[?2004hddocker exec -it todo 
+[K-
+-backend-redis-1 redis-cli[?2004l
+
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> K
+[17C
+[0K127.0.0.1:6379> KE
+[18C
+[0K127.0.0.1:6379> KEY
+[19C
+[0K127.0.0.1:6379> KEYS
+[20C
+[0K127.0.0.1:6379> KEYS [0;90;49mpattern[0m
+[21C
+[0K127.0.0.1:6379> KEYS *[0;90;49m pattern[0m
+[22C
+[0K127.0.0.1:6379> KEYS *
+[22C
+1) "counter"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> G
+[17C
+[0K127.0.0.1:6379> GE
+[18C
+[0K127.0.0.1:6379> GET
+[19C
+[0K127.0.0.1:6379> GET [0;90;49mkey[0m
+[20C
+[0K127.0.0.1:6379> GET c[0;90;49m key[0m
+[21C
+[0K127.0.0.1:6379> GET co[0;90;49m key[0m
+[22C
+[0K127.0.0.1:6379> GET cou[0;90;49m key[0m
+[23C
+[0K127.0.0.1:6379> GET coun[0;90;49m key[0m
+[24C
+[0K127.0.0.1:6379> GET count[0;90;49m key[0m
+[25C
+[0K127.0.0.1:6379> GET counte[0;90;49m key[0m
+[26C
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"47"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> S
+[17C
+[0K127.0.0.1:6379> SE
+[18C
+[0K127.0.0.1:6379> SET
+[19C
+[0K127.0.0.1:6379> SET [0;90;49mkey value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT uni[0m
+[20C
+[0K127.0.0.1:6379> SET c[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT u[0m
+[21C
+[0K127.0.0.1:6379> SET co[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT [0m
+[22C
+[0K127.0.0.1:6379> SET cou[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT[0m
+[23C
+[0K127.0.0.1:6379> SET coun[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EXA[0m
+[24C
+[0K127.0.0.1:6379> SET count[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|EX[0m
+[25C
+[0K127.0.0.1:6379> SET counte[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|E[0m
+[26C
+[0K127.0.0.1:6379> SET counter[0;90;49m key value [NX|XX] [GET] [EX seconds|PX milliseconds|[0m
+[27C
+[0K127.0.0.1:6379> SET counter [0;90;49mvalue [NX|XX] [GET] [EX seconds|PX milliseconds|EXAT[0m
+[28C
+[0K127.0.0.1:6379> SET counter 9[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|EX[0m
+[29C
+[0K127.0.0.1:6379> SET counter 90[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|E[0m
+[30C
+[0K127.0.0.1:6379> SET counter 900[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds|[0m
+[31C
+[0K127.0.0.1:6379> SET counter 9001[0;90;49m value [NX|XX] [GET] [EX seconds|PX milliseconds[0m
+[32C
+[0K127.0.0.1:6379> SET counter 9001
+[32C
+OK
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> G
+[17C
+[0K127.0.0.1:6379> GE
+[18C
+[0K127.0.0.1:6379> GET
+[19C
+[0K127.0.0.1:6379> GET [0;90;49mkey[0m
+[20C
+[0K127.0.0.1:6379> GET c[0;90;49m key[0m
+[21C
+[0K127.0.0.1:6379> GET co[0;90;49m key[0m
+[22C
+[0K127.0.0.1:6379> GET cou[0;90;49m key[0m
+[23C
+[0K127.0.0.1:6379> GET coun[0;90;49m key[0m
+[24C
+[0K127.0.0.1:6379> GET count[0;90;49m key[0m
+[25C
+[0K127.0.0.1:6379> GET counte[0;90;49m key[0m
+[26C
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"9002"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> D
+[17C
+[0K127.0.0.1:6379> DE
+[18C
+[0K127.0.0.1:6379> DEL
+[19C
+[0K127.0.0.1:6379> DEL [0;90;49mkey [key ...][0m
+[20C
+[0K127.0.0.1:6379> DEL c[0;90;49m key [key ...][0m
+[21C
+[0K127.0.0.1:6379> DEL co[0;90;49m key [key ...][0m
+[22C
+[0K127.0.0.1:6379> DEL cou[0;90;49m key [key ...][0m
+[23C
+[0K127.0.0.1:6379> DEL coun[0;90;49m key [key ...][0m
+[24C
+[0K127.0.0.1:6379> DEL count[0;90;49m key [key ...][0m
+[25C
+[0K127.0.0.1:6379> DEL counte[0;90;49m key [key ...][0m
+[26C
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> DEL counter
+[27C
+(integer) 1
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"NaN"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"NaN"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"NaN"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"1"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"2"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"3"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> DEL counter
+[27C
+(integer) 1
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"NaN"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"1"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> DEL counter
+[27C
+(integer) 1
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+(nil)
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"NaN"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"1"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> DEL counter
+[27C
+(integer) 1
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+(nil)
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"NaN"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> DEL counter
+[27C
+(integer) 1
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+(nil)
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"1"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> DEL counter
+[27C
+(integer) 1
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> DEL counter[0;90;49m key [key ...][0m
+[27C
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+(nil)
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"1"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"2"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> GET counter[0;90;49m key[0m
+[27C
+[0K127.0.0.1:6379> GET counter
+[27C
+"4"
+127.0.0.1:6379> 
+[0K127.0.0.1:6379> Q
+[17C
+[0K127.0.0.1:6379> QU
+[18C
+[0K127.0.0.1:6379> QUI
+[19C
+[0K127.0.0.1:6379> QUIT
+[20C
+[0K127.0.0.1:6379> QUIT
+[20C
+[1m[7m%[27m[1m[0m                                                                               
+ 
+]7;file://MLNW9GKMWW7/Users/ville/Documents/GitHub/cointainers-applications-main
+[0m[27m[24m[Jville@MLNW9GKMWW7 cointainers-applications-main % [K[?2004heexit[?2004l
+
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...       1 completed.
+
+Script done on Thu Mar 20 23:13:02 2025
